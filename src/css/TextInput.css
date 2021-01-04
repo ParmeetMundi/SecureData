@@ -1,0 +1,55 @@
+.input{
+    margin-top: 10vh;
+    display: flex;
+    position: relative;
+    /* position: absolute;
+    top: 50vh;
+    left: 5vw; */
+    z-index: 50;
+    margin-right: 15px;
+}
+
+.input > textarea{
+    resize:none;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.options{
+    background-color: rgba(255, 255, 255, 0.6);
+    
+}
+
+.input > .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input > .options >input{
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.options > .MuiButton-root{
+ 
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+@media only screen and (max-width:768px){
+
+    .input{
+        width: 90vw;
+    }
+    
+    .options {
+        width: 30%;
+    }
+
+
+    }

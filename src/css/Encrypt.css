@@ -1,0 +1,104 @@
+.centerEncryptComponent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+    min-height: 90vh;
+    
+    background-color: rgb(153, 152, 152);
+}
+
+
+.encryptComponent{
+    margin-top: 5px;
+    border: 2px solid rgba(0, 0, 0,0.8);
+    border-radius: 5px;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    padding: 20px;
+}
+
+.fileType > Button{
+  outline: none !important;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0,0.8);
+  color: white;
+}
+
+.fileType > Button:hover{
+  
+  color: black;
+}
+
+.fileType{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   width: 150px;
+   margin: 10px;
+}
+.fileType > p{
+  margin-left: 10px ;
+  text-decoration: underline;
+
+}
+
+.uploadButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.uploadButton>#upload{
+  width: 80% !important;
+  overflow: hidden;
+}
+
+.encryptionPassword{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: 10px;
+}
+
+.encryptionPassword > Button{
+  background-color: rgba(0, 0, 0,0.8);
+  color: white;
+  margin:5px;
+}
+
+
+.encryptionPassword > Button:hover{
+  color:black;
+}
+
+#defaultPassword{
+  margin: 5px;
+}
+
+#startEncrypt{
+ background-color: red;
+ color: white;
+ margin:10px;
+ outline: none;
+}
+
+@media only screen and (max-width:768px){
+  .centerEncryptComponent{
+     flex-direction: column; 
+   }
+}
+@media only screen and (max-width:400px){
+  .encryptComponent{
+    width: 95vw;
+  }
+}

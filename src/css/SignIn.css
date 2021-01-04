@@ -1,0 +1,70 @@
+.signIn-form{
+    position: relative;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    z-index: 100;
+
+}
+
+.signIn-form > .form{
+    
+     padding:5px;
+     width: 25vw !important;
+     background-color: white !important;
+     border-radius: 5px;
+}
+
+.fieldset{
+     display: flex;
+     flex-direction: column;
+    
+     border: 3px solid;
+     border-radius: 5px;
+     padding:5px;
+     padding-left:10px ;
+}
+
+legend{
+    width: auto;
+}
+.forget_password{
+    color:inherit !important;
+    outline: none !important;
+    text-transform: capitalize !important;
+    
+}
+.enter_signIn{
+    text-transform: capitalize !important;
+    color:inherit !important;
+    outline: none !important;
+    margin-right: 5px !important;
+}
+.new_user{
+    text-transform: capitalize !important;
+    color:inherit !important;
+    outline: none !important;
+    margin-top: 5px !important;
+}
+
+
+.close_sign_form{
+    position: absolute !important;
+    top:-5.5vh !important;
+    right: -4.5vw !important;
+    outline: none !important;
+    color: white !important;
+  }
+
+  
+
+  @media only screen and (max-width:768px){
+    .signIn-form > .form{
+        width: 60vw !important;
+    }
+   
+    .signIn-form{
+        left: 20vw;
+    }
+
+    }

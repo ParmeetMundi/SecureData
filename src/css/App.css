@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+}
+
+.app_header{
+  height: 10vh;
+}
+
+.app_body{
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  /* margin-bottom: 5px; */
+}
+
+.Footer{
+  height: 10vh;
+  width: 100vw;
+  z-index: 10000;
+}

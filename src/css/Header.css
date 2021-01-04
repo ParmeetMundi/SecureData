@@ -1,0 +1,141 @@
+.header{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0,0.8);
+    color:rgb(190, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 10px; 
+    position: fixed;
+    z-index: 100;
+
+}
+
+
+.logo{
+    width: 35vw;
+    height: auto;
+    transition: 0.5s ease;
+  
+}
+.logo:hover{
+    transform: scale(1.07);
+    
+
+}
+
+.header_sidebar{
+  color:rgb(190, 34, 34) !important;
+  outline: none !important;
+  border: none !important;
+}
+.header_sidebar:hover{
+    /* border: 2px solid white; */
+    background-color: rgba(255, 255, 255,0.1) !important;
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    height:50px;
+    padding: 2px;
+    color: rgb(190, 34, 34) !important;
+    text-decoration: none !important;
+    margin-right: 15px;
+}
+.signOut{
+  display: flex;
+  align-items: center;
+  color: rgb(190, 34, 34) !important;
+  text-decoration: none !important;
+  height:50px;
+  padding: 2px;
+  margin-right: 15px;
+}
+
+
+.header > .header_right > .link{
+   
+    text-decoration: none !important;
+}
+
+.storage{
+    display: flex;
+    align-items: center;
+    color: rgb(190, 34, 34) !important;
+    height:50px;
+    padding: 2px;
+    text-decoration: none !important;
+    margin-right: 1vw;
+}
+
+.header_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left:20vw ; */
+    
+}
+
+.signup:hover{
+    background-color: rgba(255, 255, 255,0.1) !important;
+    border-radius: 5px ;
+}
+.signOut:hover{
+  background-color: rgba(255, 255, 255,0.1) !important;
+  border-radius: 5px ;
+}
+.storage:hover{
+    background-color: rgba(255, 255, 255,0.1) !important;
+    border-radius: 5px ;
+   
+}
+
+.encrypt:hover{
+  background-color: rgba(255, 255, 255,0.1) !important;
+  border-radius: 5px ;
+ 
+}
+.encrypt{
+  display: flex;
+    align-items: center;
+  color: rgb(190, 34, 34) !important;
+  height:50px;
+  padding: 2px;
+  text-decoration: none !important;
+  margin-right: 1vw;
+}
+
+
+
+  .signup_button{
+    outline: none !important;
+    border: none;
+    text-transform: capitalize !important;
+  }
+
+  .signOut_button{
+    outline: none !important;
+    border: none;
+    text-transform: capitalize !important;
+  }
+
+
+
+  @media only screen and (max-width:768px){
+
+    .storage{
+      display: none;
+    }
+   
+    .encrypt{
+     display: none;
+    } 
+
+   /* .logo{
+     height: auto;
+     width:50vw ;
+   }  */
+
+    }

@@ -1,0 +1,30 @@
+.carousel{
+    margin:0;
+    z-index: 0;
+    
+}
+.background{
+    position: relative;
+    position: fixed;
+    
+}
+.carousel-inner{
+    width: 100vw !important;
+    height: 90vh !important;
+}
+
+.carousel-item > img{
+    height:90vh;
+    width:100vw;
+}
+
+.blackLayer{
+    background-color: rgba(0, 0, 0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    width: 100vw;
+    z-index: 10;
+    
+}

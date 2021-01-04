@@ -1,0 +1,100 @@
+legend{
+    width: auto;
+}
+
+.newAccount > .form >fieldset{
+     display: flex;
+     flex-direction: column;
+     
+     border: 3px solid;
+     border-radius: 5px;
+     padding:5px;
+     padding-left:10px ;
+
+}
+
+.newAccount > .form >fieldset>.avatar_name>.avatar{
+    margin-left: 15px;
+    margin-right: 5px;
+    
+    
+
+}
+.newAccount > .form >fieldset>.avatar_name{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.newAccount > .form >fieldset>.avatar_name>input{
+     width: 60%;
+     height: 30px;
+    
+}
+.newAccount > .form >fieldset>#file{
+    margin-left: 10px;
+    width: 50%;
+    outline: none !important;
+    border: none !important;
+}
+.newAccount{
+    position: relative;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    z-index: 100;
+
+}
+
+.newAccount > .form{
+    
+    padding:5px;
+    width: 50vw !important;
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+.close_newUser_form{
+    position: absolute !important;
+    top:-5.5vh !important;
+    right: -4.5vw !important;
+    outline: none !important;
+    color: white !important;
+  }
+
+  .enter_newUser{
+      outline: none !important;
+  }
+
+  /* #confirmPassword{
+      width: 70%;
+      margin-left: 15px;
+  }
+  #email{
+    width: 70%;
+    margin-left: 15px;
+}
+#password{
+    width: 70%;
+    margin-left: 15px;
+} */
+
+.newAccount > .form >fieldset>input{
+    width: 70%;
+    margin-left: 15px;
+}
+.newAccount > .form >fieldset>label{
+  
+    margin-left: 15px;
+}
+
+@media only screen and (max-width:768px){
+    .newAccount > .form{
+        width: 80vw !important;
+    }
+   
+    .newAccount{
+        left: 10vw;
+    }
+
+    }
