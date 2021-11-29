@@ -13,7 +13,7 @@ const Storage = () => {
 
 
 
-  const [Folders, setFolders] = useState([])
+  const [Folders, setFolders] = useState(['hell'])
   const [newFolder, setnewFolder] = useState("")
   const [folderToDelete, setfolderToDelete] = useState("")
   const { currentUser } = useContext(AuthContext)
@@ -111,7 +111,7 @@ const Storage = () => {
           </Link>
         })
       }
-    </div>)
+    </div>);
   }
 
   return <div>

@@ -41,9 +41,9 @@ function App() {
                 <Info />
               </Route>
 
-              <Route exact path="/encryptData">
+              {/* <Route exact path="/encryptData">
                 <Encrypt />
-              </Route>
+              </Route> */}
 
               <Route exact path="/storage/:folderName">
                 <Files />

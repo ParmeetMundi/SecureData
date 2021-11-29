@@ -23,6 +23,8 @@ const Download = (props) => {
   let NoOfChunks, iv, encryptedData, key, currentChunk = 1, decipher, fileSize, decryptedData, fileCreated = false//url in localFileSystem
 
 
+
+  // delete if file with same name is there
   useEffect(() => {
 
     return () => {
@@ -177,10 +179,10 @@ const Download = (props) => {
     const append = (fs, blob) => {
       fs.root.getFile(props.file, { create: false }, function (fileEntry) {
 
-        fileEntry.getMetadata(function (metadata) {
-          console.log(metadata.size);
-          console.log(currentChunk)
-        }, onError)
+        // fileEntry.getMetadata(function (metadata) {
+        //   console.log(metadata.size);
+        //   console.log(currentChunk)
+        // }, onError)
 
 
         fileEntry.createWriter(async (fileWriter) => {

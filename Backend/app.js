@@ -3,7 +3,7 @@ const mongoose= require('mongoose');
 
 
 const app=express();
-const url='mongodb://127.0.0.1:27017/hell';
+const url='mongodb+srv://SecureData:SecureData@cluster0.6wruk.mongodb.net/SecureData?retryWrites=true&w=majority';
 
 app.use(express.json({limit: '25mb'}));
 

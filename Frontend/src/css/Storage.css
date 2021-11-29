@@ -6,13 +6,13 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding-top: 7px;
+   padding-top: .7rem;
 
 }
 
 .storageOptions>div{
    
-   margin-left: 10px;
+   margin-left: 1rem;
 }
 
 .storageOptions>div>#folderButton{
@@ -43,7 +43,7 @@
    z-index: 50;
 }
 #folders{
-   width: 100px;
+   width: 10rem;
    height: auto;
    color: rgb(218, 183, 32) !important;
 }

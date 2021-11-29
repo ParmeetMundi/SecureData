@@ -92,9 +92,9 @@ const Header = () => {
 
     <div className="header_right">
 
-      <Link to="/encryptData" className="link" onClick={disable}>
+      {/* <Link to="/encryptData" className="link" onClick={disable}>
         <div className="encrypt"><EnhancedEncryptionIcon fontSize="large" />Encrypt</div>
-      </Link>
+      </Link> */}
 
 
       <Link to="/storage" className="link" onClick={disable}>

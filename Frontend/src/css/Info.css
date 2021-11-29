@@ -4,6 +4,7 @@
    position: absolute;
    top: 20vh;
    left: 5vw;
+   font-size: 1.6rem;
 }
 
 
@@ -14,13 +15,13 @@ top: 20vh;
 left:5vw; */
 color: white;
 z-index: 50;
-font-size: 18px;
+font-size: 1.8rem;
 width: 45vw;
 }
 
 .info >.info-inner >p > h1 > span{
-    border:2px solid white;
-    border-radius: 5px;
+    border:.2rem solid white;
+    border-radius: .5rem;
 }
 
 .info >.info-inner>ul{
@@ -31,15 +32,15 @@ width: 45vw;
     width: 50vw;
     color: white;
     z-index: 50;
-    font-size:18px ;
+    font-size:1.8rem ;
 }
 
 .info >.info-inner{
     display: flex;
-    margin-right: 5px;
+    margin-right: .5rem;
 }
 
-@media only screen and (max-width:768px){
+/* @media only screen and (max-width:768px){
 
     .info >.info-inner>ul>h1{
         font-size: 25px;
@@ -49,4 +50,4 @@ width: 45vw;
         font-size: 30px;
     }
 
-    }
+    } */

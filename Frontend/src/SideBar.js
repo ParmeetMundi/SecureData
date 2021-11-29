@@ -49,9 +49,9 @@ const SideBar = (props) => {
             </Link>
 
 
-            <Link to="/encryptData" className="encryptFiles" onClick={disable}>
+            {/* <Link to="/encryptData" className="encryptFiles" onClick={disable}>
                 <EnhancedEncryptionIcon id="EnhancedEncryptionIcon" fontSize="large" /><span> Encrypt </span>
-            </Link>
+            </Link> */}
 
             {currentUser !== null ?
                 <div onClick={deleteAccount} className="button">

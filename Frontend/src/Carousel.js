@@ -17,19 +17,6 @@ const Carousel = () => {
 
         </Carousels>
 
-
-        {/* <div className="slide carousel" id="microCarousel" data-ride="carousel">
-           <div className="carousel-inner">
-               <div className="carousel-item active">
-                   <img src="data_share.png" alt="data_share_pic"/>
-               </div>
-               
-               <div className="carousel-item">
-                   <img src="data_share2.png" alt="data_share_pic"/>
-               </div>
-           </div>            
-        </div> 
-     */}
         <div className="blackLayer">
 
         </div>
