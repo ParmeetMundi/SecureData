@@ -1,0 +1,48 @@
+.fileOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+
+}
+
+.fileOptions >input{
+   width:25vw;
+   overflow: hidden;   
+}
+
+.uploadButton{
+    outline: none !important;
+    border: none !important;
+}
+
+.uploadIcon{
+    color:rgb(95, 195, 235);
+
+}
+.fileBody{
+    display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+
+.fileBody > .file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fileIcon{
+    color: rgb(95, 195, 235);
+}
+.optionsButton{
+    border:none !important;
+    outline:none !important;
+}
+
+@media only screen and (max-width: 560px){
+    .fileOptions>input{
+        width:60vw;
+    }
+}

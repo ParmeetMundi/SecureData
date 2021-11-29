@@ -1,0 +1,75 @@
+
+.storageOptions{
+   height: 10vh;
+   min-height: max-content;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 7px;
+
+}
+
+.storageOptions>div{
+   
+   margin-left: 10px;
+}
+
+.storageOptions>div>#folderButton{
+   outline: none;
+}
+.storageOptions>div>input{
+   outline: none;
+   max-width: 40vw;
+   border: none;
+}
+.storageBody{
+   
+   position: relative;
+   width: 100vw;
+      
+}
+.folderLink{
+   display: flex !important;
+   flex-direction: column !important;
+   justify-content: center !important;
+   align-items: center;
+   text-decoration: none !important;
+   
+}
+#foldersRow{
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+   z-index: 50;
+}
+#folders{
+   width: 100px;
+   height: auto;
+   color: rgb(218, 183, 32) !important;
+}
+
+.storageBody > img{
+   z-index: -1; 
+   width: 40%;
+   height: auto;
+   opacity: .2;
+   position: absolute;
+   top: 30vh;
+   left: 30vw;
+   position: fixed;
+}
+
+
+
+.storageBody>.progressBar{
+  position: absolute;
+  top: 30vh;
+  left: 48vw;
+ 
+}
+
+@media only screen and (max-width:500px){
+   .storageOptions{
+      flex-direction: column;
+   }
+}

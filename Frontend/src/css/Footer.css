@@ -1,0 +1,8 @@
+.footer{
+    /* display: block; */
+
+    background-color: rgb(185, 184, 184);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
