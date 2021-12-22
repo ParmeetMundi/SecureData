@@ -8,6 +8,6 @@ Upload and Download of File is done in chunks<br/>
 
 # Website Pics
 <br/>
-<img src="https://github.com/ParmeetMundi/SecureData/blob/main/home.png">
-<img src="https://github.com/ParmeetMundi/SecureData/blob/main/storage.png">
-<img src="https://github.com/ParmeetMundi/SecureData/blob/main/download.png">
+<img src="https://github.com/ParmeetMundi/SecureData/blob/master/home.png">
+<img src="https://github.com/ParmeetMundi/SecureData/blob/master/storage.png">
+<img src="https://github.com/ParmeetMundi/SecureData/blob/master/download.png">
