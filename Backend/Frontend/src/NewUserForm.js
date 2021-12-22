@@ -39,7 +39,7 @@ const NewUserForm = (props) => {
 
 
 
-                        axios.post("http://localhost:8080/newUser", {
+                        axios.post("/newUser", {
                             name: name,
                             id: user.uid
                         }).then(res => {

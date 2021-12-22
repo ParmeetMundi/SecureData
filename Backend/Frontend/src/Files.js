@@ -25,7 +25,7 @@ const Files = () => {
         if (currentUser === "null")
             return
 
-        axios.get("http://localhost:8080/storage/folder/files", {
+        axios.get("/storage/folder/files", {
             params: {
                 id: currentUser.uid,
                 folderName: params.folderName

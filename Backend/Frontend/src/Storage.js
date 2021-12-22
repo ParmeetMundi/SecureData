@@ -29,7 +29,7 @@ const Storage = () => {
     else if (Folders.indexOf(newFolder) !== -1) {
       alert("Change Name of Folder");
     } else {
-      axios.post("http://localhost:8080/storage/createFolder", {
+      axios.post("/storage/createFolder", {
         folderName: newFolder,
         id: currentUser.uid
       })
@@ -54,7 +54,7 @@ const Storage = () => {
   useEffect(() => {
 
     if (currentUser !== null)
-      axios.get("http://localhost:8080/storage/folders/", {
+      axios.get("/storage/folders/", {
         params: {
           id: currentUser.uid
         }
@@ -83,7 +83,7 @@ const Storage = () => {
     }
 
 
-    axios.delete("http://localhost:8080/storage/deleteFolder", {
+    axios.delete("/storage/deleteFolder", {
       data: {
         folderName: folderToDelete,
         id: currentUser.uid

@@ -40,7 +40,7 @@ const Upload = (props) => {
       NumberOfChunks = (Number)(fileSize / chunkSize) + 1;
 
 
-    axios.post("http://localhost:8080/uploadFile/fileDetails", {
+    axios.post("/uploadFile/fileDetails", {
       id: currentUser.uid,
       fileName: props.file.name,
       chunkSize: chunkSize,
@@ -94,7 +94,7 @@ const Upload = (props) => {
           encrypted += await cipher.update(Buffer.from(data), ArrayBuffer, "hex");
 
 
-          await axios.post("http://localhost:8080/uploadFile", {
+          await axios.post("/uploadFile", {
             id: currentUser.uid,
             fileName: props.file.name,
             chunkNumber: currentChunk,
@@ -122,7 +122,7 @@ const Upload = (props) => {
       encrypted = await cipher.update(Buffer.from(data), ArrayBuffer, "hex");
 
 
-      await axios.post("http://localhost:8080/uploadFile", {
+      await axios.post("/uploadFile", {
         id: currentUser.uid,
         fileName: props.file.name,
         chunkNumber: currentChunk,
@@ -150,7 +150,7 @@ const Upload = (props) => {
 
 
 
-    axios.post("http://localhost:8080/uploadFile/lastChunk", {
+    axios.post("/uploadFile/lastChunk", {
       id: currentUser.uid,
       fileName: props.file.name,
       chunkNumber: currentChunk,
@@ -200,7 +200,7 @@ const Upload = (props) => {
     if (progessBarvalue !== 100) {
       //delete file that is not completely uploaded => in this we donot wait for resopnse
       console.log("delete")
-      axios.delete('http://localhost:8080/uploadFile/deleteFile', {
+      axios.delete('/uploadFile/deleteFile', {
         data: {
           id: currentUser.uid,
           fileName: props.file.name

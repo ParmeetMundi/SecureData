@@ -47,7 +47,7 @@ const Download = (props) => {
   //start will first collect fs details
   const startDownload = async () => {
 
-    await axios.get("http://localhost:8080/GetFile/fileDetails", {
+    await axios.get("/GetFile/fileDetails", {
       params: {
         id: currentUser.uid,
         fileName: props.file,
@@ -77,7 +77,7 @@ const Download = (props) => {
   //first chunk for taking out iv vector and aes key
   const firstChunk = async () => {
 
-    await axios.get("http://localhost:8080/GetFile/", {
+    await axios.get("/GetFile/", {
       params: {
         id: currentUser.uid,
         fileName: props.file,
@@ -100,7 +100,7 @@ const Download = (props) => {
 
   const regularChunk = async () => {
 
-    await axios.get("http://localhost:8080/GetFile/", {
+    await axios.get("/GetFile/", {
       params: {
         id: currentUser.uid,
         fileName: props.file,
@@ -302,7 +302,7 @@ const Download = (props) => {
   const deleteFile = () => {
     setshowProgressBar(true)
 
-    axios.delete("http://localhost:8080/GetFile/deleteFile", {
+    axios.delete("/GetFile/deleteFile", {
       data: {
         id: currentUser.uid,
         fileName: props.file,
