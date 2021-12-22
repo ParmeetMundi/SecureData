@@ -1,6 +1,12 @@
 const express = require('express')
 const mongoose= require('mongoose');
+const path= require('path');
+//import { fileURLToPath } from 'url';
+const fileURLToPath= require('url')
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
+const port=process.env.PORT||8080
 
 const app=express();
 const url='mongodb+srv://SecureData:SecureData@cluster0.6wruk.mongodb.net/SecureData?retryWrites=true&w=majority';
@@ -35,7 +41,15 @@ app.use('/uploadFile',upload);
 const download=require('./Routes/downloads')
 app.use('/GetFile',download);
 
+if ( process.env.NODE_ENV == "production"){
 
-app.listen(8080,()=>{
+  app.use(express.static(path.join(__dirname, 'FrontEnd/build')));
+  app.get('/*', (req, res) => {
+   res.sendFile(path.join(__dirname, 'FrontEnd/build', 'index.html'));
+ });
+
+}
+
+app.listen(port,()=>{
     console.log("server started");
 })
