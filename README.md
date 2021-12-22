@@ -5,3 +5,9 @@ Files are encrypted with AES 128 algorithm, PBKDF2 (Password-Based Key Derivatio
 Tech used: React JS,  CSS, JavaScript, Material UI, Express, MongoDB, Axios, Nodejs <br/>
 Firebase only for firebase authentication<br/>
 Upload and Download of File is done in chunks<br/>
+
+# Website Pics
+<br/>
+<img src="">
+<img src="">
+<img src="">
