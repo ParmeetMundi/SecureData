@@ -10,6 +10,7 @@
   "author": "Parmeet Singh",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "mongoose": "^5.10.13",
     "nodemon": "^2.0.6",

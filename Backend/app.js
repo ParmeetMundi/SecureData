@@ -1,18 +1,13 @@
 const express = require('express')
 const mongoose= require('mongoose');
 const path= require('path');
-//import { fileURLToPath } from 'url';
-const fileURLToPath= require('url')
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
-
 const port=process.env.PORT||8080
-
 const app=express();
 const url='mongodb+srv://SecureData:SecureData@cluster0.6wruk.mongodb.net/SecureData?retryWrites=true&w=majority';
+var compression = require('compression')
+app.use(compression())
 
 app.use(express.json({limit: '25mb'}));
-
 app.use((req,res,next)=>{
   res.header("Access-Control-Allow-Origin","*");
   res.header("Access-Control-Allow-Headers","Origin ,X-Requested-With,Content-Type,Accept");
