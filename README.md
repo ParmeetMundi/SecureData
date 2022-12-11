@@ -1,5 +1,5 @@
 Frontend Files are in Backend Folder <br/>
-Website is Deployed on Heroku
+
 # SecureData
 Secure Data –<br/> 
 Store Data safely with AES-128 (Advanced Encryption Standard) with end to end Encryption.<br/> 
